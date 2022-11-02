@@ -16,7 +16,7 @@ public class BaseClass {
     @BeforeClass
     public void loadWebDriver(@Optional("chrome") String browser) {
         if (browser.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\linhpham\\Documents\\Tshape_Training\\Webdriver\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\OneDrive\\Documents\\LinhPham\\TShapeTraining\\Webdriver\\chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
             options.addArguments("start-maximized"); // open Browser in maximized mode
             options.addArguments("disable-infobars"); // disabling infobars
@@ -27,7 +27,7 @@ public class BaseClass {
             driver = new ChromeDriver(options);
         }
         if (browser.equals("firefox")) {
-            System.setProperty("webdriver.gecko.driver", "C:\\Users\\linhpham\\Documents\\Tshape_Training\\Webdriver\\geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", "C:\\Users\\Admin\\OneDrive\\Documents\\LinhPham\\TShapeTraining\\Webdriver\\geckodriver.exe");
             ChromeOptions options = new ChromeOptions();
             driver = new ChromeDriver(options);
         }
