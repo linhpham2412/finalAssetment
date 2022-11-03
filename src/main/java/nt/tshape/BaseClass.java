@@ -11,6 +11,7 @@ import org.testng.annotations.Parameters;
 public class BaseClass {
     public WebDriver driver;
     public WebDriverWait wait;
+    public Customer_Information customerInformation;
 
     @Parameters({"browser"})
     @BeforeClass
@@ -38,7 +39,8 @@ public class BaseClass {
     }
 
     @BeforeClass
-    public void setupWait(){
+    public void setUp() {
         wait = new WebDriverWait(driver, Constant.LONG_TIME);
+        customerInformation = new Customer_Information();
     }
 }

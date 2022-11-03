@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a9e97fe-7512-4659-9651-e80af8d99812" name="Changes" comment="1st commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/Customer_Information.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/PageModal/AutomationPracticeAccountPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestCase/Exercise1RegisterNewAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestCase/Exercise1RegisterNewAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/BaseClass.java" afterDir="false" />
@@ -20,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -168,5 +170,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit" />
     <option name="LAST_COMMIT_MESSAGE" value="1st commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="addressInfoField.isDisplayed()" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
