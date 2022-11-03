@@ -27,4 +27,9 @@ public class Utils {
         int value = random.nextInt(maxValue - minValue + 1) + minValue;
         return String.valueOf(value);
     }
+
+    public static Boolean generateRandomTrueOrFalse() {
+        Random random = new Random();
+        return random.nextBoolean();
+    }
 }
