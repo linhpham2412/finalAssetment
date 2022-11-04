@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -45,9 +46,14 @@ public class BaseClass {
 
     @BeforeClass
     public void setUp() {
-        wait = new WebDriverWait(driver, Constant.SUPER_LONG_TIME);
+        wait = new WebDriverWait(driver, Constant.SHORT_TIME);
         testContext = new TestContext();
         customerInformation = new Customer_Information();
         testContext.setCustomerInformation(customerInformation);
+    }
+
+    @AfterClass
+    public void closeDriver() {
+        driver.quit();
     }
 }

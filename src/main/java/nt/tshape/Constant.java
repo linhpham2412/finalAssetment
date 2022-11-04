@@ -14,4 +14,6 @@ public class Constant {
 
     public static final String TITLE_MR_FIELD_ID = "id_gender1";
     public static final String TITLE_MRS_FIELD_ID = "id_gender2";
+    public static final String PRODUCT_NAME = "product-name";
+    public static final String PRODUCT_CURRENT_PRICE = "price product-price";
 }

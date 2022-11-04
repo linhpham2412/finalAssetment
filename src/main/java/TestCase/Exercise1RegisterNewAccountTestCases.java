@@ -10,7 +10,7 @@ import static nt.tshape.Utils.*;
 
 public class Exercise1RegisterNewAccountTestCases extends BaseClass {
     @Test
-    public void registerNewAccount() {
+    public void RegisterNewAccount() {
         AutomationPracticeIndexPage automationPracticeIndexPage = new AutomationPracticeIndexPage(driver, wait, testContext);
         AutomationPracticeAccountPage automationPracticeAccountPage = new AutomationPracticeAccountPage(driver, wait, testContext);
 
