@@ -3,6 +3,8 @@ package nt.tshape;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
@@ -11,6 +13,7 @@ import org.testng.annotations.Parameters;
 public class BaseClass {
     public WebDriver driver;
     public WebDriverWait wait;
+    public TestContext testContext;
     public Customer_Information customerInformation;
 
     @Parameters({"browser"})
@@ -29,8 +32,10 @@ public class BaseClass {
         }
         if (browser.equals("firefox")) {
             System.setProperty("webdriver.gecko.driver", "C:\\Users\\Admin\\OneDrive\\Documents\\LinhPham\\TShapeTraining\\Webdriver\\geckodriver.exe");
-            ChromeOptions options = new ChromeOptions();
-            driver = new ChromeDriver(options);
+            FirefoxOptions options = new FirefoxOptions()
+                    .setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe")
+                    .setAcceptInsecureCerts(true);
+            driver = new FirefoxDriver(options);
         }
         driver
                 .manage()
@@ -40,7 +45,9 @@ public class BaseClass {
 
     @BeforeClass
     public void setUp() {
-        wait = new WebDriverWait(driver, Constant.LONG_TIME);
+        wait = new WebDriverWait(driver, Constant.SUPER_LONG_TIME);
+        testContext = new TestContext();
         customerInformation = new Customer_Information();
+        testContext.setCustomerInformation(customerInformation);
     }
 }

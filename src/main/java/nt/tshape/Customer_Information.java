@@ -122,6 +122,7 @@ public class Customer_Information {
             case "10" -> "October";
             case "11" -> "November";
             case "12" -> "December";
+            default -> "";
         };
     }
 

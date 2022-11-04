@@ -2,6 +2,7 @@ package nt.tshape.PageModal;
 
 import nt.tshape.BaseClass;
 import nt.tshape.Customer_Information;
+import nt.tshape.TestContext;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,16 +22,16 @@ public class AutomationPracticeAccountPage extends BaseClass {
     private final Customer_Information customerInformation;
     public WebDriver driver;
 
-    public AutomationPracticeAccountPage(WebDriver driver, WebDriverWait wait, Customer_Information customerInformation) {
+    public AutomationPracticeAccountPage(WebDriver driver, WebDriverWait wait, TestContext testContext) {
         this.driver = driver;
         this.wait = wait;
-        this.customerInformation = customerInformation;
+        this.customerInformation = testContext.getCustomerInformation();
     }
 
     public AutomationPracticeAccountPage clickLinkButtonByName(String buttonName) {
-        WebElement buttonToBeClick = driver.findElement(By.xpath(String.format(linkButtonXPathLocatorByName, buttonName)));
-        wait.until(ExpectedConditions.elementToBeClickable(buttonToBeClick));
-        buttonToBeClick.click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(String.format(linkButtonXPathLocatorByName, buttonName))));
+        driver.findElement(By.xpath(String.format(linkButtonXPathLocatorByName, buttonName)))
+                .click();
         return this;
     }
 

@@ -2,6 +2,7 @@ package nt.tshape.PageModal;
 
 import nt.tshape.Constant;
 import nt.tshape.Customer_Information;
+import nt.tshape.TestContext;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,10 +28,10 @@ public class AutomationPracticeIndexPage {
     public WebDriver driver;
 
     //constructor
-    public AutomationPracticeIndexPage(WebDriver driver, WebDriverWait wait, Customer_Information customerInformation) {
+    public AutomationPracticeIndexPage(WebDriver driver, WebDriverWait wait, TestContext testContext) {
         this.driver = driver;
         this.wait = wait;
-        this.customerInformation = customerInformation;
+        this.customerInformation = testContext.getCustomerInformation();
     }
 
     public AutomationPracticeIndexPage goToPageByURL(String locationURL) {
