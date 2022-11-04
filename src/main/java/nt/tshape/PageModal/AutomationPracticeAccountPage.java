@@ -12,6 +12,8 @@ import org.testng.Assert;
 
 public class AutomationPracticeAccountPage extends BaseClass {
     private final WebDriverWait wait;
+    private final Customer_Information customerInformation;
+    public WebDriver driver;
     //locator
     private final String linkButtonXPathLocatorByName = "//span[normalize-space() = '%s']//parent::a";
     private final String titleCheckBoxLocatorById = "//input[@id='%s']";
@@ -19,8 +21,6 @@ public class AutomationPracticeAccountPage extends BaseClass {
     private final String dobDropDownFieldLocatorByXPathIdName = "//div[@id='%s']";
     private final String addressAliasLocatorByValue = "//h3[contains (@class,'page-subheading') and normalize-space(text())='%s']";
     private final String addressInfoLocatorByFieldName = "//span[normalize-space() = '%s']";
-    private final Customer_Information customerInformation;
-    public WebDriver driver;
 
     public AutomationPracticeAccountPage(WebDriver driver, WebDriverWait wait, TestContext testContext) {
         this.driver = driver;
@@ -36,8 +36,8 @@ public class AutomationPracticeAccountPage extends BaseClass {
     }
 
     public AutomationPracticeAccountPage verifyPersonalInfoDataByFieldName(String fieldName) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format(personalInfoTextFieldLocatorByName, fieldName))));
         WebElement fieldToBeVerify = driver.findElement(By.xpath(String.format(personalInfoTextFieldLocatorByName, fieldName)));
-        wait.until(ExpectedConditions.visibilityOf(fieldToBeVerify));
         String actualValue = fieldToBeVerify.getAttribute("value");
         String expectedValue = customerInformation.getDataByFieldName(fieldName);
         Assert.assertEquals(actualValue, expectedValue, "Field: " + fieldName + " does not display correct value");
@@ -67,8 +67,8 @@ public class AutomationPracticeAccountPage extends BaseClass {
     }
 
     public AutomationPracticeAccountPage verifyAddressAliasHeaderDisplayCorrectValue(String expectedValue) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format(addressAliasLocatorByValue, expectedValue))));
         WebElement addressAliasHeader = driver.findElement(By.xpath(String.format(addressAliasLocatorByValue, expectedValue)));
-        wait.until(ExpectedConditions.visibilityOf(addressAliasHeader));
         String actualValue = addressAliasHeader.getText();
         Assert.assertEquals(actualValue.compareToIgnoreCase(expectedValue), 0, "Address " + expectedValue + " does not exist in address panel");
         return this;

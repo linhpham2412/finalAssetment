@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9e97fe-7512-4659-9651-e80af8d99812" name="Changes" comment="1st commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestCase/Exercise2SearchProductTestCases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/TestContext.java" afterDir="false" />
+    <list default="true" id="2a9e97fe-7512-4659-9651-e80af8d99812" name="Changes" comment="complete ex2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestCase/Exercise1RegisterNewAccountTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestCase/Exercise1RegisterNewAccountTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestCase/Exercise2SearchProductTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestCase/Exercise2SearchProductTestCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/Customer_Information.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/Customer_Information.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/PageModal/AutomationPracticeAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/PageModal/AutomationPracticeAccountPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/PageModal/AutomationPracticeIndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/PageModal/AutomationPracticeIndexPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/TestContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/TestContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="working_to_complete_Ex1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -178,7 +177,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit" />
     <MESSAGE value="finish ex1" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish ex1" />
+    <MESSAGE value="complete ex2" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete ex2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
