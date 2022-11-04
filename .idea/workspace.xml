@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a9e97fe-7512-4659-9651-e80af8d99812" name="Changes" comment="1st commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/Customer_Information.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/PageModal/AutomationPracticeAccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestCase/Exercise2SearchProductTestCases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/TestContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestCase/Exercise1RegisterNewAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestCase/Exercise1RegisterNewAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestCase/Exercise1RegisterNewAccountTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestCase/Exercise1RegisterNewAccountTestCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/Customer_Information.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/Customer_Information.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/PageModal/AutomationPracticeAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/PageModal/AutomationPracticeAccountPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/PageModal/AutomationPracticeIndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/PageModal/AutomationPracticeIndexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nt/tshape/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nt/tshape/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="working_to_complete_Ex1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667388094428</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish ex1">
+      <created>1667496320930</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667496320930</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,7 +177,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="1st commit" />
+    <MESSAGE value="finish ex1" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish ex1" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

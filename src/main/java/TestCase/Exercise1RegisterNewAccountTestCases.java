@@ -11,8 +11,8 @@ import static nt.tshape.Utils.*;
 public class Exercise1RegisterNewAccountTestCases extends BaseClass {
     @Test
     public void registerNewAccount() {
-        AutomationPracticeIndexPage automationPracticeIndexPage = new AutomationPracticeIndexPage(driver, wait, customerInformation);
-        AutomationPracticeAccountPage automationPracticeAccountPage = new AutomationPracticeAccountPage(driver, wait, customerInformation);
+        AutomationPracticeIndexPage automationPracticeIndexPage = new AutomationPracticeIndexPage(driver, wait, testContext);
+        AutomationPracticeAccountPage automationPracticeAccountPage = new AutomationPracticeAccountPage(driver, wait, testContext);
 
         automationPracticeIndexPage
                 .goToPageByURL("http://automationpractice.com/index.php")
